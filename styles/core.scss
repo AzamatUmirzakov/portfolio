@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@keyframes idle-down-link {
+  from {
+    top: -20px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  to {
+    top: 0px;
+    bottom: 0px;
+  }
+}

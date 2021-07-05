@@ -1,0 +1,51 @@
+.works {
+  padding: 200px 0;
+  background: #000;
+  .works-header {
+    h1 {
+      background-image: -moz-linear-gradient(
+        45deg,
+        #ff3870 0,
+        #ff3870 50%,
+        #c300c3 100%
+      );
+      background-image: -webkit-linear-gradient(
+        45deg,
+        #ff3870 0,
+        #ff3870 50%,
+        #c300c3 100%
+      );
+      background-image: linear-gradient(
+        45deg,
+        #ff3870 0,
+        #ff3870 50%,
+        #c300c3 100%
+      );
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-family: "Montserrat";
+      font-weight: bold;
+      margin-bottom: 32px;
+      &::selection {
+        color: #fff;
+        background: #f7366d;
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-size: 20px;
+      color: #f7366d;
+      margin-bottom: 50px;
+      &::selection {
+        color: #fff;
+        background: #f7366d;
+      }
+    }
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
