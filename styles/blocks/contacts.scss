@@ -1,0 +1,39 @@
+.contacts {
+  .contacts-inside {
+    padding: 200px 0;
+    .contacts-header {
+      margin-bottom: 150px;
+      text-align: center;
+      h1 {
+        font-family: "Montserrat Bold";
+        font-size: 64px;
+        margin-bottom: 50px;
+      }
+      p {
+        font-family: "Open Sans";
+        font-size: 24px;
+      }
+    }
+    .contacts-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .contact-link {
+        // filter: drop-shadow(0 2.8px 2.2px rgba(0, 0, 0, 0.02))
+        //   drop-shadow(0 6.7px 5.3px rgba(0, 0, 0, 0.028))
+        //   drop-shadow(0 12.5px 10px rgba(0, 0, 0, 0.035))
+        //   drop-shadow(0 22.3px 17.9px rgba(0, 0, 0, 0.042))
+        //   drop-shadow(0 41.8px 33.4px rgba(0, 0, 0, 0.05))
+        //   drop-shadow(0 100px 80px rgba(0, 0, 0, 0.07));
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2) translateZ(0);
+        }
+        &:focus {
+          transform: scale(1.2) translateZ(0);
+          outline: none;
+        }
+      }
+    }
+  }
+}

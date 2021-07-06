@@ -5,7 +5,6 @@
 }
 
 section {
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -423,7 +422,7 @@ textarea {
   text-decoration: none;
 }
 .page-header .header-nav .page-links {
-  width: 10%;
+  width: 12%;
   display: flex;
   justify-content: space-between;
 }
@@ -537,6 +536,46 @@ textarea {
   transform: translateZ(50px);
   opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.contacts .contacts-inside {
+  padding: 200px 0;
+}
+.contacts .contacts-inside .contacts-header {
+  margin-bottom: 150px;
+  text-align: center;
+}
+.contacts .contacts-inside .contacts-header h1 {
+  font-family: "Montserrat Bold";
+  font-size: 64px;
+  margin-bottom: 50px;
+}
+.contacts .contacts-inside .contacts-header p {
+  font-family: "Open Sans";
+  font-size: 24px;
+}
+.contacts .contacts-inside .contacts-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .contacts-inside .contacts-links .contact-link {
+  transition: transform 0.3s ease-in-out;
+}
+.contacts .contacts-inside .contacts-links .contact-link:hover {
+  transform: scale(1.2) translateZ(0);
+}
+.contacts .contacts-inside .contacts-links .contact-link:focus {
+  transform: scale(1.2) translateZ(0);
+  outline: none;
+}
+
+.page-footer .footer-inside {
+  padding: 20px 0;
+}
+.page-footer .footer-inside p {
+  font-family: "Open Sans";
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
