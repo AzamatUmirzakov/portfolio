@@ -8,75 +8,79 @@
     <title>Azamat Umirzakov</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="header-nav center">
+        <a href="" class="home-link">aumirzakov</a>
+        <div class="page-links">
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+        </div>
+      </nav>
+    </header>
     <section class="intro">
-      <h1>Привет, я фронт-енд разработчик</h1>
-      <p>Нужны мои услуги?</p>
-      <button class="social-links-button">Да!</button>
-      <a href="#about" class="works-link">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-chevron-down"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-          />
-        </svg>
-      </a>
-    </section>
-    <section class="about" id="about">
-      <h1>Обо мне</h1>
-      <p>
-        Я постараюсь сделать ваш заказ так, чтобы вам показалось будто все
-        сделано качественно, с помощью следующих технологий:
-      </p>
-      <ul>
-        <li>
-          <p class="hover-disappear">HTML</p>
-          <p class="hover-display">
-            <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank"
-              >wikipedia</a
-            >
-          </p>
-        </li>
-        <li>
-          <p class="hover-disappear">CSS/SCSS</p>
-          <p class="hover-display">
-            <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"
-              >wikipedia</a
-            >
-            <a href="https://ru.wikipedia.org/wiki/Sass" target="_blank"
-              >wikipedia</a
-            >
-          </p>
-        </li>
-        <li>
-          <p class="hover-disappear">JavaScript (ES6)</p>
-          <p class="hover-display">
-            <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank"
-              >wikipedia</a
-            >
-          </p>
-        </li>
-        <li>
-          <p class="hover-disappear">React</p>
-          <p class="hover-display">
-            <a href="https://ru.wikipedia.org/wiki/React" target="_blank"
-              >wikipedia</a
-            >
-          </p>
-        </li>
-      </ul>
+      <div class="intro-inside center">
+        <h1>Привет, я front-end разработчик</h1>
+        <a href="#works" class="down">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
     <section class="works" id="works">
-      <header class="works-header">
-        <h1>Однако не спешите закрывать страницу!</h1>
-        <p>Взгляните на примеры моих работ</p>
-      </header>
+      <div class="works-inside center">
+        <header class="works-header">
+          <h1>Мои работы</h1>
+        </header>
+        <div class="works-grid">
+          <a class="works-item" target="_blank"  href="https://web-dev-pro.vercel.app/">
+            <img src="assets/webdevpro.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">Web Dev Pro</h1>
+            </div>
+          </a>
+          <a class="works-item" target="_blank"  href="https://aven.vercel.app/">
+            <img src="assets/aven.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">Aven</h1>
+            </div>
+          </a>
+          <a class="works-item" target="_blank"  href="https://healthyswitcher.vercel.app/">
+            <img src="assets/healthyswitcher.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">Healthy Switcher</h1>
+            </div>
+          </a>
+          <a class="works-item" target="_blank"  href="https://maqs.vercel.app/">
+            <img src="assets/maqs.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">MAQs</h1>
+            </div>
+          </a>
+          <a class="works-item" target="_blank"  href="https://passion-sepia.vercel.app/">
+            <img src="assets/passion.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">Passion</h1>
+            </div>
+          </a>
+          <a class="works-item" target="_blank"  href=>
+            <img src="assets/icndy.png" alt="" />
+            <div class="works-text">
+              <h1 class="work-item-text">ICNDY</h1>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <script src="scripts/main.js"></script>
   </body>

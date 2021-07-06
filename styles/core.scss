@@ -19,6 +19,16 @@ section {
   src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
 @keyframes idle-down-link {
   from {
     top: -20px;
@@ -30,4 +40,9 @@ section {
     top: 0px;
     bottom: 0px;
   }
+}
+
+.center {
+  max-width: 1400px;
+  margin: 0 auto;
 }
