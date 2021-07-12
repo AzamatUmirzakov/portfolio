@@ -1,5 +1,13 @@
 // making work examples tilt
 
+document.body.onload = function () {
+  document.querySelector("div.loading").classList.toggle("hide");
+  document
+    .querySelector("div.loading")
+    .addEventListener("transitionend", () => {
+      document.querySelector("div.loading").remove();
+    });
+};
 let works = document.querySelector(".works-grid");
 let settings = {
   perspective: 1000,
@@ -7,10 +15,7 @@ let settings = {
   scale: 1.2,
 };
 for (let work of works.children) {
-  work.addEventListener("mouseenter", (event) => {
-    // setTransition(element);
-  });
-  work.addEventListener("mousemove", (event) => {
+  let tilt = (event) => {
     let width = work.offsetWidth;
     let height = work.offsetHeight;
     let centerX = work.getBoundingClientRect().left + width / 2;
@@ -21,9 +26,16 @@ for (let work of works.children) {
 
     let rotateX = (settings.maxDegree * mouseY) / (height / 2);
     let rotateY = (-1 * settings.maxDegree * mouseX) / (width / 2);
-    work.style.transform = `perspective(${settings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${settings.scale}, ${settings.scale}, ${settings.scale})`;
-  });
-  work.addEventListener("mouseleave", (event) => {
+    if (document.documentElement.clientWidth > 870) {
+      work.style.transform = `perspective(${settings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${settings.scale}, ${settings.scale}, ${settings.scale})`;
+    } else {
+      work.style.transform = `scale(${settings.scale})`;
+    }
+  };
+  work.addEventListener("pointermove", tilt);
+  work.addEventListener("pointerenter", tilt);
+  work.addEventListener("pointerdown", tilt);
+  work.addEventListener("pointerleave", (event) => {
     work.style.transform = `perspective(${settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
     // setTransition(element);
   });

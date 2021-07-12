@@ -4,6 +4,24 @@
   scroll-behavior: smooth;
 }
 
+.loading {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.3s ease-in;
+}
+
+.loading.hide {
+  opacity: 0;
+}
+
 section {
   // min-height: 100vh;
   box-sizing: border-box;
